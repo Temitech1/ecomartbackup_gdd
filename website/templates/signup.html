@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Signup{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block form %}
+<div class="wrapper">
+
+    <form action="" id="form1" method="post">
+        <h2 class="h2style">SIGNUP</h2>
+        <div class="lbitem">
+            <label for="LastName">Last Name</label>
+            <input type="text" class="box" name="lastname" id="lastname" placeholder="Enter Last Name"> <br> <br>
+        </div class="lbitem" >
+        <div>
+            <label for="FirstName">First Name</label>
+            <input type="text" class="box" name="firstname" id="firstname" 
+            placeholder="Enter First Name"> <br> <br>
+        </div>   
+        <div class="lbitem">
+            <label for="Email">Email</label>
+            <input type="email" class="box" name="email" 
+            id="email" placeholder="Enter email"> <br> <br>
+        </div>
+        <div class="lbitem">
+            <label for="Phone number">Phone Number</label>
+            <input type="number" class="box" name="phone" id="phone" 
+            placeholder="Enter Phone Number"> <br> <br>
+        </div>
+        <div lbitem>
+            <label for="password">Password</label>
+            <input type="password" class="box" name="password" 
+            id="password" placeholder="Enter password"> <br><br>        
+        </div>   
+    
+        <div lbitem>
+            <label for="password">Password (Confirm)</label>
+            <input type="password" class="box" name="password2" 
+            id="password2" placeholder="Confirm password"> <br><br>
+        </div>
+       
+        <button type="submit" class="btnbtn">Signup</button>
+    
+    </form>
+
+     
+    <div id="empty" style="background-color: rgb(255, 255, 255); height: 10px;">
+
+    </div>
+
+    <div class="already" style="padding-top: 10px;">
+        <a href="/login">Already Signed Up? <span>Login</span></a>
+    </div>        
+
+</div>
+
+
+{% endblock %}
+
+
+

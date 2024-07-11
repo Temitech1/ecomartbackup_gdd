@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block form %}
+<div class="wrapper1">
+
+    <form action="" id="form2" method="post">
+        <h2 class="h2style">LOGIN</h2>
+        <div class="lbitem">
+            <label for="email">Email</label>
+            <input type="email" class="box" name="email" 
+            id="email" placeholder="Enter email"> <br> <br>
+        </div class="lbitem" >
+        <div>
+            <label for="password">Password</label>
+            <input type="password" class="box" name="password" 
+            id="password" placeholder="Enter password"> <br> <br>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+
+    
+    <div class="already" style="padding-top: 10px; background-color: #c8f4db;">
+        <a href="/sign-up" style="font-size: 16px;">Don't have an account? <span>SignUp</span></a>
+    </div>     
+
+</div>
+{% endblock %}
